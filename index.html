@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanskriti Jain · Applied AI</title>
+<meta name="description" content="Sanskriti Jain, M.Sc. student in Intelligent Interactive Systems. Conversational AI, multimodal retrieval and ML systems.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="#top" aria-label="Sanskriti Jain">SJ</a>
+  <nav>
+    <a href="#work">Work</a><a href="#experience">Experience</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a>
+    <button id="theme" aria-label="Toggle dark mode" title="Toggle dark mode"><span></span></button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="eyebrow">Bielefeld, Germany</p>
+    <h1>Sanskriti <span class="accent">Jain</span></h1>
+    <p class="lead">I build AI systems that turn speech, video and images into useful interactions.</p>
+    <p class="sub">Master's student in Intelligent Interactive Systems at Universität Bielefeld. Conversational AI, multimodal retrieval, speech-model fine-tuning and full-stack machine learning. Looking for a working-student role in AI engineering or applied ML.</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/sanskritijain1" target="_blank" rel="noopener">GitHub <i>↗</i></a>
+      <a class="btn" href="https://www.linkedin.com/in/sanskriti-jain1" target="_blank" rel="noopener">LinkedIn <i>↗</i></a>
+      <a class="btn solid" href="mailto:sanskriti.jain0102@gmail.com">Email me <i>→</i></a>
+    </div>
+  </section>
+
+  <section id="work" class="reveal">
+    <h2 class="section">Selected work <small>click a project to open it</small></h2>
+    <div class="filters" id="filters" aria-label="Filter projects by technology">
+      <button data-f="all" class="on">All</button>
+      <button data-f="python">Python</button>
+      <button data-f="pytorch">PyTorch</button>
+      <button data-f="llm">LLMs</button>
+      <button data-f="docker">Docker</button>
+    </div>
+    <ul class="projects">
+      <li class="project" data-tags="python pytorch llm">
+        <button class="head" aria-expanded="false">
+          <span class="idx">01</span>
+          <span class="ttl"><b>Lifelog Memory System</b><em>Multimodal retrieval · finding moments in hours of first-person video</em></span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="body"><div>
+          <p>A natural-language search and reasoning system for long egocentric videos. LaViLa video-language embeddings and FAISS retrieval connect a question to the visual evidence that answers it.</p>
+          <p>Instead of relying only on event captions, it retrieves the best-matching frames first, then reconstructs the surrounding events. A Streamlit interface shows matching frames, similarity scores and interactive timelines.</p>
+          <p class="result">Tested across five sessions and more than 13,800 indexed frames from a processed EPIC-KITCHENS subset.</p>
+          <p class="stack">Python · PyTorch · LaViLa · FAISS · Hugging Face Transformers · Llama / Ollama · Streamlit</p>
+        </div></div>
+      </li>
+      <li class="project" data-tags="python pytorch docker">
+        <button class="head" aria-expanded="false">
+          <span class="idx">02</span>
+          <span class="ttl"><b>InspectAI</b><em>Computer vision and MLOps · from anomaly detection to an inspectable system</em></span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="body"><div>
+          <p>A full-stack visual inspection system with inspection history, anomaly heatmaps and a model registry that selects the deployed model version at runtime.</p>
+          <p>I compared autoencoder, ResNet18, PatchCore and EfficientAD approaches on MVTec AD 2 and selected EfficientAD. The decision threshold uses validation-only statistics to avoid test-label leakage.</p>
+          <p class="result">EfficientAD reached 0.850 AUROC. A Docker Compose setup connects the API, PostgreSQL, MLflow, Prometheus and Grafana, and the CI pipeline caught a regression before release.</p>
+          <p class="stack">Python · TypeScript · PyTorch · FastAPI · PostgreSQL · React · MLflow · Docker · Alembic</p>
+        </div></div>
+      </li>
+      <li class="project" data-tags="python llm">
+        <button class="head" aria-expanded="false">
+          <span class="idx">03</span>
+          <span class="ttl"><b>RoboJEC</b><em>Conversational AI · a voice interface that listens, responds and speaks</em></span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="body"><div>
+          <p>A real-time conversational system that connects speech recognition, context-aware LLM dialogue and speech synthesis.</p>
+          <p>I diagnosed the transcription component to cut waiting time, then built a small evaluation framework around response relevance and response time to guide improvements.</p>
+          <p class="result">Transcription latency went from 20–30 seconds down to 2–4 seconds.</p>
+          <p class="stack">Python · Claude API · faster-whisper · SpeechRecognition · spaCy · pyttsx3</p>
+        </div></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience" class="reveal">
+    <h2 class="section">Experience</h2>
+    <div class="row"><span class="when">Jun–Jul 2024<br>Bengaluru, India</span>
+      <div><h3>Artificial Intelligence Intern, DRDO (DYSL-AI)</h3>
+      <p>Developed a real-time automatic speech recognition system for domain-specific drone voice commands. Fine-tuned Whisper on Indian-accent speech data from SVARAH and reached a character error rate of 0.0468.</p></div></div>
+    <div class="row"><span class="when">2025</span>
+      <div><h3>Publication</h3>
+      <p>Intelligent Conversational Brain RoboJEC: A Personality Conversation System. IEEE ICCCMLA 2025. Co-authors D. Dixit and A. Mishra.</p></div></div>
+    <h2 class="section sm">Education</h2>
+    <div class="row"><span class="when">Oct 2025 – present<br>Bielefeld</span>
+      <div><h3>M.Sc. Intelligent Interactive Systems</h3><p>Universität Bielefeld</p></div></div>
+    <div class="row"><span class="when">Nov 2021 – Apr 2025<br>Jabalpur</span>
+      <div><h3>B.Tech. Artificial Intelligence and Data Science</h3><p>Jabalpur Engineering College</p></div></div>
+  </section>
+
+  <section id="toolkit" class="reveal">
+    <h2 class="section">Toolkit <small>hover a card</small></h2>
+    <div class="cards">
+      <div class="card"><h3>Build and train</h3><p>Python, TypeScript, PyTorch, Hugging Face Transformers, Whisper fine-tuning</p></div>
+      <div class="card"><h3>Retrieve and interact</h3><p>FAISS, semantic search, video-language models, LLM-based reasoning, Streamlit, React</p></div>
+      <div class="card"><h3>Serve and observe</h3><p>FastAPI, PostgreSQL, SQLAlchemy, Alembic, MLflow, Docker, Prometheus, Grafana, GitHub Actions, Git, conda</p></div>
+    </div>
+    <p class="lang">Languages: English C1 · German A2.2 completed, B1.1 in progress</p>
+  </section>
+
+  <section id="contact" class="reveal contact">
+    <h2>Interested in my work?</h2>
+    <a class="big" href="mailto:sanskriti.jain0102@gmail.com">sanskriti.jain0102@gmail.com <i>→</i></a>
+  </section>
+</main>
+<footer>© 2026 Sanskriti Jain</footer>
+<script src="script.js"></script>
+</body>
+</html>
